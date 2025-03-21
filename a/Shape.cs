@@ -30,7 +30,16 @@ namespace a
 			this.isHoley = true;
 		}
 
-
+		public void MakeHoleyIf()
+		{
+			if (!isHoley)
+			{
+				if (Area() > Perimeter())
+				{
+					isHoley = true;
+				}
+			}
+		}
 
 		public abstract double Perimeter();
 
